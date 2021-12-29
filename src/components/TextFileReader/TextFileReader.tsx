@@ -20,7 +20,7 @@ export const TextFileReader = ({ onComplete }: TextFileReaderProps) => {
         onComplete?.(event.target?.result as string);
       }
     } else {
-      alert("<span class='error'>It doesn't seem to be a text file!</span>");
+      alert("It doesn't seem to be a text file!");
     }
     reader.readAsText(file);
   };
